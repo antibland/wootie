@@ -1,0 +1,13 @@
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+button,
+.button {
+  @include button;
+}
+

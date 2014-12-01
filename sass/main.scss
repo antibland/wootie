@@ -1,0 +1,44 @@
+@import "base";
+
+@include box-size-all;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  &.home {
+    background: url(../assets/bg-home.jpeg) no-repeat center center fixed;
+    @include background-size(cover);
+  }
+}
+
+.container {
+  background: rgba(black, 0.25);
+  height: 100%;
+}
+
+main {
+  padding: 2em;
+  max-width: 40em;
+  margin: 0 auto;
+
+  @include transition(0.3s ease-in, 0.3s);
+  @include transform(scale(0.95, 0.95));
+  @include opacity(0);
+
+  [aria-busy=false] & {
+    @include transform(scale(1, 1));
+    @include opacity(1);
+  }
+}
+
+h1 {
+  @include text-shadow(1px 1px 2px black);
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+}
