@@ -8,7 +8,7 @@ html, body {
 
 body {
   &.home {
-    background: url(../assets/bg-home.jpeg) no-repeat center center fixed;
+    background: url(../assets/bg-home.jpg) no-repeat center center fixed;
     @include background-size(cover);
   }
 }

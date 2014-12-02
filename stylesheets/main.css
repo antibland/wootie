@@ -73,7 +73,7 @@ button:hover, button:focus, .button:hover, .button:focus { background-color: #b1
 
 html, body { height: 100%; }
 
-body.home { background: url(../assets/bg-home.jpeg) no-repeat center center fixed; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+body.home { background: url(../assets/bg-home.jpg) no-repeat center center fixed; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 
 .container { background: rgba(0, 0, 0, 0.25); }
 
