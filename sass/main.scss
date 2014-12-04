@@ -1,9 +1,11 @@
 @import "base";
 
-@include box-size-all;
-
 html, body {
   height: 100%;
+}
+
+html {
+  @include text-size-adjust;
 }
 
 body {
