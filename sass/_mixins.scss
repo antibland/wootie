@@ -80,6 +80,8 @@
   text-transform: uppercase;
   margin-right: 15px;
 
+  $highlight: $hue7 0 -20px 30px -2px inset, #FFF 0 2px 4px -2px inset;
+
   &:before{
     content: "";
     @include background-image(linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)));
@@ -91,12 +93,13 @@
 
   &:hover,
   &:focus {
-    @include box-shadow($hue7 0 -20px 30px -2px inset, #FFF 0 2px 4px -2px inset);
+    @include box-shadow($highlight);
     background-color: $hue6;
     cursor: pointer;
   }
 
   &:active {
+    @include box-shadow($highlight);
     @include transform(translateY(.08em) scale(0.99, 0.99));
   }
 }
