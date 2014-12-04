@@ -52,6 +52,11 @@ h1 {
   @include text-shadow(1px 1px 2px black);
   color: white;
   text-align: center;
+
+  > span {
+    @include transform(translateY(-150em));
+    display: inline-block;
+  }
 }
 
 p {

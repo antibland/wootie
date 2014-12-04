@@ -14,7 +14,5 @@
 }
 
 .drop-bounce {
-  @include transform(translateY(-50em));
-  @include animation("drop-bounce .8s forwards .8s");
-  display: inline-block;
+  @include animation("drop-bounce .8s forwards");
 }
