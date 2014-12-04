@@ -30,6 +30,11 @@
   }
 }
 
+@mixin remove-tap-highlight {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
 @mixin box-size-all {
   * {
     @include box-sizing(border-box);
@@ -58,9 +63,9 @@
   //Top Inset Shadow on Active
   $hue8: lighten($hue1, 50%);
 
+  @include remove-tap-highlight;
   @include box-shadow($hue4 0 -20px 35px -7px inset, $hue5 0 2px 6px 0px inset);
   @include border-radius($border-radius);
-  @include transition(all 0.4s ease-out 0s);
   display: inline-block;
   background-color: $hue3;
   border: 1px solid $hue1;
@@ -86,9 +91,13 @@
 
   &:hover,
   &:focus {
-    background-color: $hue6;
     @include box-shadow($hue7 0 -20px 30px -2px inset, #FFF 0 2px 4px -2px inset);
+    background-color: $hue6;
     cursor: pointer;
+  }
+
+  &:active {
+    @include transform(translateY(.08em) scale(0.99, 0.99));
   }
 }
 

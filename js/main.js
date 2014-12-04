@@ -14,6 +14,7 @@ var wootie = (function() {
 
   function bindings() {
     window.addEventListener("load", loaded);
+    document.addEventListener("touchstart", function(){}, true);
   }
 
   function chain(obj) {
