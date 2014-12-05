@@ -1,0 +1,65 @@
+form {
+  @include border-radius($border-radius);
+  display: block;
+  background-color: white;
+  max-width: 18.5em;
+  margin: rhythm(1) auto 0;
+  padding: rhythm(1)*.5;
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: rhythm(.5);
+  }
+
+  p {
+    color: $darkgray;
+    font-size: 0.8rem;
+    margin: 0.75rem 0;
+  }
+
+  [type=checkbox] {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+label {
+  font-size: 0.75rem;
+  cursor: pointer;
+
+  &[data-required=true] {
+    &:after {
+      content: 'required';
+      color: red;
+      float: right;
+    }
+  }
+}
+
+[type=text],
+[type=email],
+[type=password] {
+  outline: none;
+
+  &:focus {
+    border: 1px solid $input-focus-color;
+  }
+}
+
+[type=text],
+[type=email],
+[type=password] {
+  @include border-radius($border-radius);
+  border: 1px solid lightgray;
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.75em;
+  font-size: 1rem;
+  position: relative;
+  top: -2px;
+
+  @include input-placeholder {
+    color: lighten(lightgray, 5%);
+  }
+}

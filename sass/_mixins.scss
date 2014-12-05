@@ -42,6 +42,14 @@
   text-size-adjust: $value;
 }
 
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
 @mixin box-size-all {
   * {
     @include box-sizing(border-box);
@@ -71,6 +79,7 @@
   //Top Inset Shadow on Active
   $hue8: lighten($hue1, 50%);
 
+  @include appearance(none);
   @include remove-tap-highlight;
   @include box-shadow($hue4 0 -20px 35px -7px inset, $hue5 0 2px 6px 0px inset);
   @include border-radius($border-radius);
@@ -81,13 +90,15 @@
   font-family: "century gothic", sans-serif;
   font-size: $text;
   padding: $padding;
-  color: $hue2;
+  color: $hue2 !important;
   text-shadow: 0 0 10px $hue3, 0px 1px 2px $hue5;
   text-decoration: none;
   position: relative;
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 15px;
+  cursor: pointer;
+  min-width: 11em;
 
   $highlight: $hue7 0 -20px 30px -2px inset, #FFF 0 2px 4px -2px inset;
 
@@ -102,14 +113,22 @@
 
   &:hover,
   &:focus {
+    text-decoration: none;
+  }
+
+  &:focus {
     @include box-shadow($highlight);
     background-color: $hue6;
-    cursor: pointer;
   }
 
   &:active {
     @include box-shadow($highlight);
     @include transform(translateY(.08em) scale(0.99, 0.99));
+  }
+
+  &.full-width {
+    width: 100%;
+    padding: 0.55em 0.6em;
   }
 }
 

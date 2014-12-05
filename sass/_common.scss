@@ -1,0 +1,27 @@
+@include box-size-all;
+
+html, body {
+  height: 100%;
+}
+
+html {
+  @include text-size-adjust;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+button,
+.button {
+  @include button;
+}
+
+a {
+  @extend %links !optional;
+}
+

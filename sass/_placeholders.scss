@@ -1,0 +1,12 @@
+%links {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $green;
+  }
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
