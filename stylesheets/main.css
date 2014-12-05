@@ -107,7 +107,7 @@ label[data-required=true]:after { content: 'required'; color: red; float: right;
 [type=text]:-ms-input-placeholder, [type=email]:-ms-input-placeholder, [type=password]:-ms-input-placeholder { color: #e0e0e0; }
 [type=text]::-webkit-input-placeholder, [type=email]::-webkit-input-placeholder, [type=password]::-webkit-input-placeholder { color: #e0e0e0; }
 
-body { background-repeat: no-repeat; background-position: center center; background-attachment: fixed; }
+body { background-repeat: no-repeat; background-position: center center; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 body.home { background-image: url(../assets/bg-home.jpg); }
 body.about { background-image: url(../assets/bg-birds.jpg); }
 body.create-account { background-image: url(../assets/bg-woods.jpg); }

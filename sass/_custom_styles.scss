@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  @include background-size(cover);
 
   &.home {
     background-image: url(../assets/bg-home.jpg);
