@@ -3,14 +3,9 @@
 input,
 textarea,
 select
-label,
 button,
 .button {
   @include remove-tap-highlight;
-}
-
-label {
-  @include user-select(none);
 }
 
 html, body {
