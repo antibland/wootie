@@ -26,6 +26,11 @@ form {
   .terms {
     margin-top: 0;
   }
+
+  .two-col {
+    width: 100%;
+    @include two-col(">p", ">input", 62%, 38%);
+  }
 }
 
 label {
@@ -48,6 +53,13 @@ label {
 
   &:focus {
     border: 1px solid $input-focus-color;
+  }
+
+  &.with_field_option {
+    margin-bottom: -0.25rem;
+    & + .field_option {
+      font-size: 0.8rem;
+    }
   }
 }
 

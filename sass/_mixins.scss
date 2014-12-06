@@ -98,6 +98,13 @@
   margin-right: 15px;
   cursor: pointer;
   min-width: 11em;
+  color: red;
+
+  form & {
+    min-width: 5.5em;
+    max-height: 2.1em;
+    margin-right: 0;
+  }
 
   $highlight: $hue7 0 -20px 30px -2px inset, #FFF 0 2px 4px -2px inset;
 
@@ -129,6 +136,14 @@
     width: 100%;
     padding: 0.55em 0.6em;
   }
+}
+
+@mixin two-col($selector_1, $selector_2, $width_1: 50%, $width_2: 50%) {
+  > * {
+    display: inline-block;
+  }
+  #{$selector_1} { width: $width_1; }
+  #{$selector_2} { width: $width_2; }
 }
 
 .center {

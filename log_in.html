@@ -3,27 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
-  <title>Create Account</title>
+  <title>Log in</title>
   <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body class="create-account">
   <div class="container">
     <main>
-      <h1>Create Account</h1>
-      <form action="" method="post" aria-labelledby="create-account-form-title">
-        <h2 id="create-account-form-title">30 Seconds</h2>
+      <h1>Log in</h1>
+      <form action="" method="post">
         <label data-required="true" for="email">email</label>
         <input autocorrect="off" autocapitalize="off" type="email" id="email" name="email" required aria-required="true" placeholder="some@email.com">
         <label data-required="true" for="password">password</label>
-        <input type="password" id="password" name="password" required aria-required="true" placeholder="password">
-        <p class="terms">
-          <input type="checkbox" name="terms" id="terms" required aria-required="true">
-          <label for="terms">I accept the Wootie <a href="#">Terms of Use</a></label>
-        </p>
-        <div class="center">
-          <input type="submit" value="Register" class="button full-width">
+        <input type="password" id="password" name="password" required aria-required="true" placeholder="password" class="with_field_option">
+        <a class="field_option" href="#">I totally forgot my password</a>
+        <div class="two-col">
+          <p class="remain-logged-in">
+            <input type="checkbox" name="remain-logged-in" id="remain-logged-in">
+            <label for="remain-logged-in">Keep me logged in</label>
+          </p><input type="submit" value="Log In" class="button">
         </div>
-        <p>Have an account? <a href="log_in.html">Log in</a></p>
       </form>
     </main>
   </div>
