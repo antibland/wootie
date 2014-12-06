@@ -3,6 +3,7 @@
 input,
 textarea,
 select
+label,
 button,
 .button {
   @include remove-tap-highlight;
