@@ -9,6 +9,10 @@ button,
   @include remove-tap-highlight;
 }
 
+label {
+  @include user-select(none);
+}
+
 html, body {
   height: 100%;
 }

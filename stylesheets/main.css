@@ -76,6 +76,8 @@ a:focus, a:hover, a:active { text-decoration: underline; }
 
 input, textarea, select label, button, .button { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color: transparent; }
 
+label { -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
 html, body { height: 100%; }
 
 html { -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
