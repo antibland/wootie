@@ -138,12 +138,12 @@
   }
 }
 
-@mixin two-col($selector_1, $selector_2, $width_1: 50%, $width_2: 50%) {
+@mixin two-col($width_1: 50%, $width_2: 50%) {
   > * {
     display: inline-block;
   }
-  #{$selector_1} { width: $width_1; }
-  #{$selector_2} { width: $width_2; }
+  .col:nth-of-type(1) { width: $width_1; }
+  .col:nth-of-type(2) { width: $width_2; }
 }
 
 .center {

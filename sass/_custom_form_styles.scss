@@ -29,7 +29,7 @@ form {
 
   .two-col {
     width: 100%;
-    @include two-col(">p", ">input", 62%, 38%);
+    @include two-col(62%, 38%);
   }
 }
 
