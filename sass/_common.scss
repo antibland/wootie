@@ -1,5 +1,13 @@
 @include box-size-all;
 
+input,
+textarea,
+select
+button,
+.button {
+  @include remove-tap-highlight;
+}
+
 html, body {
   height: 100%;
 }
