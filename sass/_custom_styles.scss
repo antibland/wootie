@@ -9,17 +9,18 @@ body {
     background-image: url(../assets/bg-home.jpg);
   }
   &.about {
-    background-image: url(../assets/bg-birds.jpg);
+    background-image: url(../assets/bg-serious-lady.jpg);
   }
   &.create-account {
     background-image: url(../assets/bg-woods.jpg);
   }
 
   &:before {
+    @include transform(translateZ(0));
     background-color: rgba(black, $bg_opacity);
     display: block;
     content: '';
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
   }
