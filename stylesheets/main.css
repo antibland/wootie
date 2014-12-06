@@ -111,7 +111,7 @@ body { height: 100%; width: 100%; background-repeat: no-repeat; background-posit
 body.home { background-image: url(../assets/bg-home.jpg); }
 body.about { background-image: url(../assets/bg-serious-lady.jpg); }
 body.create-account { background-image: url(../assets/bg-woods.jpg); }
-body:before { background-color: rgba(0, 0, 0, 0.3); display: block; content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; overlay: hidden; }
+body:before { background-color: rgba(0, 0, 0, 0.3); display: block; content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; overlay: hidden; -webkit-transform: translateZ(1px); -moz-transform: translateZ(1px); -ms-transform: translateZ(1px); -o-transform: translateZ(1px); transform: translateZ(1px); }
 
 .video-container { position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden; }
 .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

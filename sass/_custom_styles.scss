@@ -27,6 +27,7 @@ body {
     right: 0;
     bottom: 0;
     overlay: hidden;
+    @include transform(translateZ(1px));
   }
 }
 
