@@ -27,9 +27,20 @@ var wootie = (function() {
     });
   }
 
+  function loadTemplate(template, destination) {
+    var t           = document.querySelector(template),
+        clone       = document.importNode(t.content, true),
+        destination = document.querySelector(destination);
+
+    destination.setAttribute("aria-busy", "true");
+    destination.appendChild(clone);
+    destination.setAttribute("aria-busy", "false");
+  }
+
   return {
     init: init,
-    chain: chain
+    chain: chain,
+    loadTemplate: loadTemplate
   };
 
 })();

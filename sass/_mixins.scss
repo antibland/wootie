@@ -102,7 +102,6 @@
 
   form & {
     min-width: 5.5em;
-    max-height: 2.1em;
     margin-right: 0;
   }
 
@@ -136,6 +135,12 @@
     width: 100%;
     padding: 0.55em 0.6em;
   }
+}
+
+@mixin mobile-smooth-scroll {
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 @mixin two-col($width_1: 50%, $width_2: 50%) {

@@ -1,10 +1,16 @@
 form {
   @include border-radius($border-radius);
+  @include mobile-smooth-scroll;
   display: block;
   background-color: white;
-  max-width: 18.5em;
   margin: rhythm(1) auto 0;
   padding: rhythm(1)*.5;
+  max-height: 23em;
+  max-width: 18.5em;
+
+  &.wide {
+    max-width: 30em;
+  }
 
   h2 {
     font-size: 1.2rem;
