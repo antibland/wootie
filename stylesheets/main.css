@@ -88,7 +88,8 @@ button.full-width, .button.full-width { width: 100%; padding: 0.55em 0.6em; }
 
 form { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; overflow: scroll; overflow-x: hidden; -webkit-overflow-scrolling: touch; display: block; background-color: white; margin: 1.8rem auto 0; padding: 0.9rem; max-height: 23em; max-width: 18.5em; }
 form.wide { max-width: 30em; }
-form h2 { font-size: 1.2rem; text-align: center; margin-bottom: 0.9rem; }
+form h2 { font-size: 1.2rem; text-align: center; }
+form h2 + p { margin-top: 0; line-height: 1.35rem; }
 form p { color: #333; font-size: 0.8rem; margin: 0.75rem 0; }
 form [type=checkbox] { display: inline-block; vertical-align: middle; }
 form .terms { margin-top: 0; }
@@ -115,7 +116,8 @@ label[data-required=true]:after { content: 'required'; color: red; float: right;
 body { height: 100%; width: 100%; background-repeat: no-repeat; background-position: center center; background-attachment: fixed; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 body.home { background-image: url(../assets/bg-phone-desk.jpg); }
 body.about { background-image: url(../assets/bg-serious-lady.jpg); }
-body.create-account { background-image: url(../assets/bg-woods.jpg); }
+body.create-account, body.log-in { background-image: url(../assets/bg-woods.jpg); }
+body.forgotten-password { background-image: url(../assets/bg-shame.jpg); }
 
 .video-container { position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden; }
 .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

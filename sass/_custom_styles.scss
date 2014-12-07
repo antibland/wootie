@@ -12,9 +12,14 @@ body {
   &.about {
     background-image: url(../assets/bg-serious-lady.jpg);
   }
-  &.create-account {
+  &.create-account,
+  &.log-in {
     background-image: url(../assets/bg-woods.jpg);
   }
+  &.forgotten-password {
+    background-image: url(../assets/bg-shame.jpg);
+  }
+
 }
 
 .video-container {
