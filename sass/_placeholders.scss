@@ -10,3 +10,15 @@
     text-decoration: underline;
   }
 }
+
+%hr {
+    margin: rhythm(1) 0;
+    border: 0;
+    height: 1px;
+    @include background-image(
+      linear-gradient(to right,
+                      rgba(0,0,0,0),
+                      rgba(0,0,0,0.55),
+                      rgba(0,0,0,0))
+    );
+}

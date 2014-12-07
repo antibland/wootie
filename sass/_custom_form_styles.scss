@@ -28,6 +28,14 @@ form {
     margin: 0.75rem 0;
   }
 
+  .account-direction {
+    p {
+      &:nth-child(2) {
+        margin-top: -0.75em;
+      }
+    }
+  }
+
   [type=checkbox] {
     display: inline-block;
     vertical-align: middle;

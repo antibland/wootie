@@ -36,3 +36,7 @@ button,
 a {
   @extend %links !optional;
 }
+
+hr {
+  @extend %hr !optional;
+}
