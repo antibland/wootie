@@ -72,8 +72,15 @@ p {
   h3 {
     font-size: 120%;
     margin-bottom: rhythm(.5);
+    text-align: center;
   }
   h4 {
     font-size: 100%;
+  }
+
+  li {
+    margin-left: rhythm(0.5);
+    font-size: 0.8rem;
+    list-style-type: square;
   }
 }

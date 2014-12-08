@@ -133,5 +133,6 @@ h1 > span { -moz-transform: translateY(-150em); -ms-transform: translateY(-150em
 
 p { color: white; }
 
-#terms-of-use h3 { font-size: 120%; margin-bottom: 0.9rem; }
+#terms-of-use h3 { font-size: 120%; margin-bottom: 0.9rem; text-align: center; }
 #terms-of-use h4 { font-size: 100%; }
+#terms-of-use li { margin-left: 0.9rem; font-size: 0.8rem; list-style-type: square; }
